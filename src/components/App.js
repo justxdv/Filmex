@@ -8,12 +8,14 @@ import Profile from "./Profile/Profile";
 import NavBar from "./NavBar/NavBar";
 import useStyles from '../styles';
 import useAlan from "./Alan";
+import Footer from "./Footer/Footer";
 
 function App() {
   const classes = useStyles();
   const alanBtnContainer = useRef();
   useAlan();
   return (
+    <>
     <div className={classes.root}>
       <CssBaseline />
       <NavBar />
@@ -29,6 +31,8 @@ function App() {
       </main>
       <div ref={alanBtnContainer}/>
     </div>
+    <Footer />
+  </>
   );
 }
 

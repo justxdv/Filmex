@@ -15,5 +15,11 @@ export default makeStyles((theme) => ({
     },
     genreImage: {
         filter: theme.palette.mode === 'dark' && 'invert(1)',
+    },
+    footer: {
+        display: 'grid',
+        color: theme.palette.text.primary,
+        justifyContent: 'center !important',
+        alignItems: 'center',
     }
 }))
